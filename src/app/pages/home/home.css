@@ -1,0 +1,66 @@
+/* Fondo degradado tecnológico */
+.products-section {
+  background: radial-gradient(circle at top, #0a192f 0%, #020c1b 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center;      /* Centra horizontalmente */
+  color: #fff;
+  padding: 5rem 0;
+}
+
+/* Imágenes grandes y centradas */
+.product-img {
+  width: 100%;
+  height: 80vh;           /* alto grande */
+  object-fit: cover;
+  object-position: center;
+  transition: transform 10s ease;
+}
+.carousel-item.active .product-img {
+  transform: scale(1.05);
+}
+
+/* Fondo de caption */
+.caption-prod {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 1rem 1.3rem;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+  bottom: -30px;
+}
+
+/* Botones del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 18px;
+}
+
+/* Texto */
+.carousel-caption h5 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.carousel-caption p {
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-img {
+    height: 50vh;
+  }
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}

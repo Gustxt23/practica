@@ -1,0 +1,23 @@
+.products-section { background: linear-gradient(180deg,#f8fafc,#e9eef6); min-height: 100vh; }
+.product-img {
+  width: 100%;
+  height: 80vh;      /* grande: ocupa buena parte de la pantalla */
+  object-fit: cover;
+}
+
+/* Caption estilo */
+.caption-prod {
+  background: rgba(0,0,0,0.45);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+}
+
+/* Indicadores abajo con espacio */
+.carousel-indicators { bottom: -30px; }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .product-img { height: 50vh; }
+  .caption-prod h5 { font-size: 1rem; }
+}
+
